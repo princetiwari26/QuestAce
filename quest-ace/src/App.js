@@ -1,10 +1,17 @@
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/common/Navbar";
+import HomePage from "./pages/public/HomePage";
+import MainFeature from "./components/common/MainFeature";
+
 function App() {
   return (
-    <div>
-      <h1 class="text-3xl font-bold text-center">
-        QuestAce
-      </h1>
-    </div>
+    <>
+    <Navbar/>
+    <MainFeature/>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+      </Routes>
+    </>
   );
 }
 
