@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { GraduationCap, Building2, ArrowRight, CheckCircle } from 'lucide-react';
+import Footer from '../../components/common/Footer';
 
 const HomePage = () => {
   const [examCode, setExamCode] = useState('');
@@ -101,6 +102,9 @@ const HomePage = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );
