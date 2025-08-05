@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GraduationCap, Building2, ArrowRight, CheckCircle } from 'lucide-react';
 import Footer from '../../components/common/Footer';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   const [examCode, setExamCode] = useState('');
@@ -83,9 +84,9 @@ const HomePage = () => {
 
           <p className="text-gray-500 mt-1">Conduct secure, proctored exams with confidence</p>
 
-          <button className="mt-3 inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-3 py-2 rounded-lg font-medium shadow transition">
+          <Link to='organizer/login' className="mt-3 inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-3 py-2 rounded-lg font-medium shadow transition">
             Conduct an Exam <ArrowRight className="w-4 h-4" />
-          </button>
+          </Link>
 
           <div className="space-y-3 text-gray-800 text-sm mt-4">
             {[
