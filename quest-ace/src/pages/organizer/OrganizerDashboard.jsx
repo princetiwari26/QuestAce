@@ -15,6 +15,7 @@ import {
     Menu,
     X
 } from 'lucide-react';
+import Profile from '../../features/organizer/Profile';
 
 const OrganizerDashboard = () => {
     const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -125,6 +126,9 @@ const OrganizerDashboard = () => {
                         </div>
                     </div>
                 </header>
+                <main>
+                    {activeItem === 'Profile' && (<Profile />)}
+                </main>
             </div>
         </div>
     );
